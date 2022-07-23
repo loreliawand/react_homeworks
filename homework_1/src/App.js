@@ -44,6 +44,7 @@ class App extends Component {
   onChangeLastProject = (lastProject) => {
     this.setState({ lastProject });
   };
+
   mySubmit = (event) => {
     event.preventDefault();
     let result = {};
@@ -51,7 +52,6 @@ class App extends Component {
       result[Object.keys(this.state)[i]] = Object.values(this.state)[i];
     }
     console.log(result);
-    console.log(Object.keys(this.state));
   };
   render() {
     const name = this.state.name;
